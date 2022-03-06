@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-AU-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario</title>
+        <style>
+            *{
+                background-color: rgb(247, 246, 245);
+                box-sizing: border-box;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            h1, h2 {
+                font-weight: bold;
+                text-align: center;
+                color: black;
+            }
+            .centrado {
+                text-align: center;
+            }
+            header {
+            background-image: url("https://fondosmil.com/fondo/10792.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+            section{
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header><img src="pasteleria.png" alt="Logo Pasteleria" width="200px" height="200px">
+        <h1>Aquí se hace el pedido</h1>
+        </header>
+        <form action="pedido.js"></form>
+            <h2> ¿Que sabor deseas ordenar?</h2>
+            <input type="checkbox" id="sabor1" name="sabor1" value="chocolate">
+            <label for="sabor1">Pastel de chocolate</label><br>
+
+            <input type="checkbox" id="sabor2" name="sabor2" value="vainilla">
+            <label for="sabor2">Pastel de vainilla</label><br>  
+
+            <input type="checkbox" id="sabor3" name="sabor3" value="tres leches">
+            <label for="sabor3">Pastel de tres leches</label><br>   
+
+            <input type="checkbox" id="sabor4" name="sabor4" value="queso">
+            <label for="sabor4">Pastel de queso</label><br>   
+
+            <input type="checkbox" id="sabor5" name="sabor5" value="cajeta">
+            <label for="sabor5">Pastel de cajeta</label><br>   
+
+            <input type="checkbox" id="sabor6" name="sabor6" value="capuccino">
+            <label for="sabor6">Pastel de capuccino</label><br>
+
+            <input type="checkbox" id="sabor7" name="sabor7" value="moka">
+            <label for="sabor7">Pastel de moka</label><br>   
+
+
+            <h2> ¿Con que adornos los deseas?</h2>
+            <input type="checkbox" id="ador1" name="ador1" value="Fresas">
+            <label for="ador1">Fresas</label><br>
+
+            <input type="checkbox" id="ador2" name="ador2" value="Mango">
+            <label for="ador2">Mango</label><br>
+
+            <input type="checkbox" id="ador3" name="ador3" value="Cerezas">
+            <label for="ador3">Cerezas</label><br>
+            
+            <input type="checkbox" id="ador4" name="ador4" value="Crema">
+            <label for="ador4">Crema pastelera</label><br>
+
+            <input type="checkbox" id="ador5" name="ador5" value="Buttercream">
+            <label for="ador5">Buttercream</label><br>
+
+            <input type="checkbox" id="ador6" name="ador6" value="Fondant">
+            <label for="ador6">Fondant</label><br>
+
+            <input type="checkbox" id="ador7" name="ador7" value="Chocolate blanco">
+            <label for="ador7">Chocolate blanco</label><br><br>
+
+            
+<section>
+            <h2> Por favor ingresa tus datos para completar tu pedido</h2>    
+        
+            <label class="centrado" for="Nombres">- Nombre(s): </label>
+            <input class="centrado" type="text" id="Nombre" placeholder="Nombre(s)"><br><br>
+
+            <label class="centrado" for="Apellido1">- Apellido Paterno: </label>
+            <input class="centrado" type="text" id="Apellido1" placeholder="Apellido Paterno"><br><br>
+
+            <label class="centrado" for="Apellido2">- Apellido Materno: </label>
+            <input class="centrado" type="text" id="Apellido2" placeholder="Apellido Materno"><br><br>
+
+            <label class="centrado" for="tel">- Número de teléfono: </label>
+            <input class="centrado" type="number" id="tel" placeholder="Ingresa tu teléfono" max-length="10"><br><br>
+
+            <label class="centrado" for="correo1">- Ingresa tu correo: </label>
+            <input class="centrado" type="email" name="correo1" id="correo1" placeholder="Ingresa tu correo"><br><br>
+
+            <label class="centrado" for="comentario">- Comentario u observación: </label><br>
+            <input class="centrado" type="text" name="comentario" id="comentario" placeholder="Personaliza tu pedido"><br><br>
+
+            <br><br>
+            <input type="reset"> 
+            <input type="submit"> 
+</section>
+        </form>
+
+            
+    </body>
+    
